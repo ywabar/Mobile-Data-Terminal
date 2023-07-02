@@ -1,0 +1,416 @@
+#navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: rgb(75, 75, 75);
+}
+
+#header {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+#favicon {
+  width: auto;
+  height: 50px;
+  padding: 5px;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+#first:hover{
+  cursor:pointer;
+}
+
+#second:hover{
+  cursor:pointer;
+}
+
+#second {
+  padding-top: 5px;
+}
+
+#header h1 {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  margin: auto;
+  text-align: left;
+}
+
+#navbar #third {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Add this property */
+  margin-right:20px;
+  margin-left: 20px;
+}
+
+#third button {
+  width: 50px;
+  height: 50px;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#offcanvasNavbar{
+  height:100%;
+  background-color: rgb(51, 51, 51);
+  padding: 10px;
+}
+
+#fourth h1{
+  color:white;
+  margin:auto;
+  padding-top: 10px;
+  font-size: large;
+
+}
+#fourth{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#fourth-row{
+  display:flex;
+  flex-direction: row;
+}
+
+#fourth-exit{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  color:white;
+}
+
+hr{
+  width: 100%;
+  height: 2px;
+  border:20px;
+  border-radius: 100px;
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right:20px;
+  
+
+}
+
+
+.navbar-nav {
+  color:white;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  padding-right:20px;
+
+}
+
+.navbar-nav:hover {
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Adjust to desired height */
+  overflow: hidden;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+  overflow:hidden;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background:rgba(0, 0, 0, 0.70);
+}
+
+#overlayinfo{
+  font-size: 45px;
+  color:white;
+  display:flex;
+  flex-direction: column;
+  padding: 3px;
+  font-weight: 650;
+  padding:30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  text-align: center;
+
+}
+
+#popup{
+  background-color: rgba(0, 0, 0, 0.555);
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+}
+
+#popupcontent{
+  min-width: 400px;
+  max-width:600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height:500px;
+  background-color:white;
+  z-index: 10;
+  color:black;
+  border-top: 2px solid black; /* Add this property */
+  font-size: large;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.click{
+  cursor: pointer;
+}
+
+
+#popupcontent h1{
+  font-size: 28px;
+}
+
+#popupcontent img{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.center{
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#popup hr{
+  width: 95%;
+  color:black;
+}
+
+
+.showpopup{
+  display:flexbox;
+  transform:matrix();
+}
+
+.hidepopup{
+  display:none;
+  transform:matrix();
+}
+
+#popup button{
+  width:2px;
+  height:2px;
+  padding:8px;
+  margin-top: 20px;
+  margin-left:auto;
+  margin-right: 20px;
+  
+}
+
+button {
+  width: 150px;
+}
+
+#footer{
+  width:100%;
+  background-color: rgb(75, 75, 75);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.firstfooter{
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  width: 95%;
+  padding-bottom:20px;
+
+}
+
+#footer img{
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+
+.firstfooter h1{
+  font-size:20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.secondfooter{
+  display:flex;
+  flex-direction: row;
+  row-gap: 10px;
+  padding:10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width:85%;
+}
+
+.second-footer1{
+  padding:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Text_Icon{
+  color:white;
+  font-size: medium;
+  padding:5px;
+  display:flex;
+  font-weight: 300;
+  align-items: center;
+}
+
+#Text_Icon a{
+  color:white;
+  text-decoration: none;
+}
+
+#Text_Icon img{
+  width:25px;
+  height:25px;
+  margin-right: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.second-footer1 h1{
+  font-size:20px;
+}
+
+
+
+
+#IndexService{
+  padding:20px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#IndexService .Header {
+  padding: 10px;
+  max-width:700px;
+}
+
+#IndexService .Header h1{
+  color:black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#IndexService .Header #Text_Icon{
+  color:black;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+#IndexService .Header hr{
+  color:black;
+  width:50%;
+  height:2px;
+  display:flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#IndexService .info{
+  font-weight: 600;
+}
+#IndexService .infotwo{
+  padding-bottom: 20px;
+}
+
+#IndexService .Header .imageforheader {
+  width: 400px;
+  height:280px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  padding:10px;
+  border-radius: 50px;
+}
+
+#IndexService .Header .imageforheader:hover {
+  width: 410px;
+  height:290px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  padding:10px;
+  border-radius: 50px;
+}
