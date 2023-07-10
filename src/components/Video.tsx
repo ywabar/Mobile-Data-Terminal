@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./Button.tsx";
 import GetStartedPopup from "./GetStartedPopup.tsx";
+import GetStarted from "./GetStarted.tsx";
 
 function Video() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -25,7 +26,13 @@ function Video() {
             Get Started
           </Button>
           {isPopupOpen && (
-            <GetStartedPopup closePopup={closePopup}>test</GetStartedPopup>
+            <GetStartedPopup
+              closePopup={closePopup}
+              heading="Choose From The Following"
+              icon="terminal.png"
+            >
+              <GetStarted></GetStarted>
+            </GetStartedPopup>
           )}
         </div>
       </div>

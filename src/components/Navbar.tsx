@@ -72,12 +72,12 @@ const Navbar: React.FC = () => {
               </a>
             </li>
             <li className="navbar-nav">
-              <a className="nav-link active" href="mdt">
+              <a className="nav-link active" href="mdt.html">
                 Mobile Data Terminal
               </a>
             </li>
             <li className="navbar-nav">
-              <a className="nav-link active" href="cad">
+              <a className="nav-link active" href="cad.html">
                 Computer Aided Dispatch
               </a>
             </li>

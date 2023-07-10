@@ -188,6 +188,7 @@ hr{
   height:100%;
   position:fixed;
   top:0;
+  
 }
 
 #popupcontent{
@@ -213,7 +214,10 @@ hr{
 
 
 #popupcontent h1{
-  font-size: 28px;
+  font-size: 22px;
+  padding-right:10px;
+  padding-left: 10px;
+
 }
 
 #popupcontent img{
@@ -360,7 +364,7 @@ button {
 
 #IndexService .Header {
   padding: 10px;
-  max-width:700px;
+  height:400px;
 }
 
 #IndexService .Header h1{
@@ -413,4 +417,59 @@ button {
   display:flex;
   padding:10px;
   border-radius: 50px;
+}
+
+#startuponetwothree{
+  color:black;
+}
+
+.navbar-nav1 {
+  color:rgb(0, 0, 0);
+  font-size: large;
+  justify-content: center;
+  align-items: center;
+  padding-top:10px;
+  list-style-type: none;
+  margin:10px;
+  padding-right:20px;
+
+}
+
+.navbar-nav1:hover {
+  color:rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+#identifierchooser{
+  justify-self: center;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+}
+
+#identifierchooser h3{
+  font-size: large;
+}
+#identifierchooser h4{
+  font-size: medium;
+  margin-top: -5px;
+  padding-bottom: 10px;
+}
+
+#identifierchooser button{
+  width:120px;
+  height:40px;
+  display:Flex;
+  justify-content: center;
+  margin-left:20px;
+}
+
+#identifierchooser input{
+  width:auto;
+  height:40px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
 }

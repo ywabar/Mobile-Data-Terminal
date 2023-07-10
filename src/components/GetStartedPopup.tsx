@@ -2,7 +2,7 @@ import React from "react";
 import { ReactNode } from "react";
 
 interface GetStartedPopupProps {
-  closePopup: () => void;
+  closePopup?: () => void;
   heading?: string;
   icon?: string;
   children: ReactNode;
