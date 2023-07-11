@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     <nav id="navbar">
       <div id="header">
         <div id="first" onClick={indexClick}>
-          <img src="./public/favicon.png" alt="Logo" id="favicon" />
+          <img src="/favicon.png" alt="Logo" id="favicon" />
         </div>
         <div id="second" onClick={indexClick}>
           <h1>Mobile Data</h1>
