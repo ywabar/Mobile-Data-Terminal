@@ -11,22 +11,7 @@ function Video() {
   };
 
   const closePopup = () => {
-    const transitionDuration = 500; // Duration of the transition in milliseconds
-    const transitionTimingFunction = "cubic-bezier(0.25, 0.1, 0.25, 1)"; // Cubic bezier timing function
-  
-
-    const popupElement = document.getElementById("popup"); 
-    popupElement.style.transition = `opacity ${transitionDuration}ms ${transitionTimingFunction}`;
-    popupElement.style.opacity = '0';
-  
-    setTimeout(() => {
       setIsPopupOpen(false);
-  
-
-      setTimeout(() => {
-        popupElement.style.transition = "";
-      }, transitionDuration);
-    }, transitionDuration);
   };
   
 
@@ -41,11 +26,12 @@ function Video() {
           <Button color="light" onClick={openPopup}>
             Get Started
           </Button>
-          <div className={`popup-container ${isPopupOpen ? "open" : ""}`}
-          style={{
-            transition: "opacity 0.4s cubic-bezier(0.42, 0, 0.58, 1)",
-            opacity: isPopupOpen ? 1 : 0,
-          }}
+          <div
+            className={`popup-container ${isPopupOpen ? "open" : ""}`}
+            style={{
+              transition: "opacity 0.4s cubic-bezier(0.42, 0, 0.58, 1)",
+              opacity: isPopupOpen ? 1 : 0,
+            }}
           >
             {isPopupOpen && (
               <GetStartedPopup
@@ -61,6 +47,7 @@ function Video() {
       </div>
     </div>
   );
+  
 }
 
 export default Video;

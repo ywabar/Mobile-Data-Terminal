@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
             <div id="fourth-exit">
               <button
                 type="button"
-                className="btn-close"
+                className="btn-close white"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
                 onClick={closeNavbar}
