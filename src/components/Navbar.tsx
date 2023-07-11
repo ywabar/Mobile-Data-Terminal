@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
         >
           <div id="fourth">
             <div id="fourth-row">
-              <img src="./public/favicon.png" alt="Logo" id="favicon" />
+              <img src="/favicon.png" alt="Logo" id="favicon" />
               <div id="fourth-column">
                 <h1>Mobile Data</h1>
                 <h1>Terminal</h1>
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
             <div id="fourth-exit">
               <button
                 type="button"
-                className="btn-close white"
+                className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
                 onClick={closeNavbar}
