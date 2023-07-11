@@ -14,15 +14,15 @@ function Video() {
     const transitionDuration = 500; // Duration of the transition in milliseconds
     const transitionTimingFunction = "cubic-bezier(0.25, 0.1, 0.25, 1)"; // Cubic bezier timing function
   
-    // Apply transition to the popup element
-    const popupElement = document.getElementById("popup"); // Replace "popup" with the ID of your popup element
+
+    const popupElement = document.getElementById("popup"); 
     popupElement.style.transition = `opacity ${transitionDuration}ms ${transitionTimingFunction}`;
     popupElement.style.opacity = '0';
   
     setTimeout(() => {
       setIsPopupOpen(false);
   
-      // Remove the transition after it has finished
+
       setTimeout(() => {
         popupElement.style.transition = "";
       }, transitionDuration);
