@@ -11,13 +11,14 @@ function Video() {
   };
 
   const closePopup = () => {
-    setIsPopupOpen(false);
+      setIsPopupOpen(false);
   };
+  
 
   return (
     <div className="video-container">
       <video autoPlay muted loop id="video-background">
-        <source src="./public/index.mp4" type="video/mp4" />
+        <source src="/index.mp4" type="video/mp4" />
       </video>
       <div className="overlay">
         <div id="overlayinfo">
@@ -25,19 +26,28 @@ function Video() {
           <Button color="light" onClick={openPopup}>
             Get Started
           </Button>
-          {isPopupOpen && (
-            <GetStartedPopup
-              closePopup={closePopup}
-              heading="Choose From The Following"
-              icon="terminal.png"
-            >
-              <GetStarted></GetStarted>
-            </GetStartedPopup>
-          )}
+          <div
+            className={`popup-container ${isPopupOpen ? "open" : ""}`}
+            style={{
+              transition: "opacity 0.4s cubic-bezier(0.42, 0, 0.58, 1)",
+              opacity: isPopupOpen ? 1 : 0,
+            }}
+          >
+            {isPopupOpen && (
+              <GetStartedPopup
+                closePopup={closePopup}
+                heading="Choose From The Following"
+                icon="terminal.png"
+              >
+                <GetStarted></GetStarted>
+              </GetStartedPopup>
+            )}
+          </div>
         </div>
       </div>
     </div>
   );
+  
 }
 
 export default Video;

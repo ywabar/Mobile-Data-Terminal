@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     <nav id="navbar">
       <div id="header">
         <div id="first" onClick={indexClick}>
-          <img src="./public/favicon.png" alt="Logo" id="favicon" />
+          <img src="/favicon.png" alt="Logo" id="favicon" />
         </div>
         <div id="second" onClick={indexClick}>
           <h1>Mobile Data</h1>
@@ -39,6 +39,13 @@ const Navbar: React.FC = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
       </div>
+      <div
+        className={`nav-container ${isOpen ? "open" : ""}`}
+        style={{
+          transition: "opacity 0.4s cubic-bezier(0.42, 0, 0.58, 1)",
+          opacity: isOpen ? 1 : 0,
+        }}
+      >
       {isOpen && (
         <div
           id="offcanvasNavbar"
@@ -83,7 +90,7 @@ const Navbar: React.FC = () => {
             </li>
           </ul>
         </div>
-      )}
+      )}</div>
     </nav>
   );
 };
