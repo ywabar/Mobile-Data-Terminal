@@ -10,6 +10,7 @@ const Alert = ({ children, onClick }: Props) => {
     <div
       className="alert alert-warning alert-dismissible fade show"
       role="alert"
+      id="alert"
     >
       <strong>Warning!</strong> {children}
       <button

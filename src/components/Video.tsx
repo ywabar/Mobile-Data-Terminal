@@ -11,9 +11,8 @@ function Video() {
   };
 
   const closePopup = () => {
-      setIsPopupOpen(false);
+    setIsPopupOpen(false);
   };
-  
 
   return (
     <div className="video-container">
@@ -47,7 +46,6 @@ function Video() {
       </div>
     </div>
   );
-  
 }
 
 export default Video;
